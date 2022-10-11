@@ -1,0 +1,46 @@
+@import './header.css';
+@import './wrapper.css';
+@import './hero.css';
+@import './checkout.css';
+@import './purchases.css';
+@import './packages.css';
+@import './sticky.css';
+@import './button.css';
+
+:root {
+  --white: #ffffff; 
+  --grey: #808080; 
+  --black: #000000; 
+  --headline3: 800 2.875rem/3.5rem Inter; 
+  --headline2: 700 3rem/3.625rem Inter; 
+  --headline4: 700 1.75rem/normal Inter; 
+  --headline5: 700 1.5625rem/normal Inter; 
+  --button: 700 1.125rem/1.75rem Inter; 
+  --caption: 400 0.75rem/1.375rem Inter; 
+  --body1-regular: 400 1.125rem/1.6875rem Inter; 
+  --body1-bold: 700 1.125rem/1.6875rem Inter; 
+  --body2-regular: 400 1rem/1.375rem Inter; 
+  --body2-bold: 700 1rem/1.1875rem Inter;  
+  --iphoneInlineSize: 400px;
+  --gridTemplateColumns: 1fr var(--iphoneInlineSize) 1000px 1fr; 
+}
+
+body {
+  font: var(--body1-regular);
+  margin: 0;
+}
+
+section {
+  block-size: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: "header header header header" "wrapper-start phone content wrapper-end" ;
+
+}
+
+.grid section {
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,10 @@
+.checkout {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+    background: aqua;
+}
+
+.checkout-content {
+    grid-area: content;
+}

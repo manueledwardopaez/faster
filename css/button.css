@@ -1,0 +1,24 @@
+.button {
+    font: var(--button);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(.9);
+}
+
+.login {
+    color: var(--black);
+    padding-block: .375rem;
+    padding-inline: 1rem;
+    border: none;
+}
+
+.singUp {
+    padding-inline: 3.75rem;
+    padding-block: .75rem;
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}

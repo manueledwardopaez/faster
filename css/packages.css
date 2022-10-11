@@ -1,0 +1,10 @@
+.packages {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+    background: rgb(199, 217, 4);
+}
+
+.packages-content {
+    grid-area: content;
+}

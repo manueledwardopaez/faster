@@ -1,0 +1,10 @@
+.purchases {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+    background: green;
+}
+
+.purchases-content {
+    grid-area: content;
+}
