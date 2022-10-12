@@ -1,10 +1,31 @@
 .checkout {
     display: grid;
     grid-template-columns: var(--gridTemplateColumns);
-    grid-template-areas: ". . content .";
-    background: aqua;
+    grid-template-areas: ". . content";
+    background: var(--white);
 }
 
 .checkout-content {
-    grid-area: content;
+    grid-area: content ;
+    padding-inline-start: 1.875rem;
+}
+
+.checkout-primary {
+    display: flex;
+    align-items: center;
+    margin-block-end: 8rem;
+}
+
+.checkout-secondary h3 {
+    font: var(--headline2);
+    padding-block-start: 4rem;
+    padding-block-end: 1.5rem;
+    inline-size: 611px;
+    margin: 0;
+}
+
+.checkout-secondary p {
+    inline-size: 611px;
+    margin: 0;
+    margin-block-end: 8rem;
 }

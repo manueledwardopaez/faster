@@ -2,9 +2,42 @@
     display: grid;
     grid-template-columns: var(--gridTemplateColumns);
     grid-template-areas: ". . content .";
-    background: rgb(199, 217, 4);
+    background: var(--black);
 }
 
 .packages-content {
     grid-area: content;
+    padding-inline-start: 1.875rem;
+}
+
+.packages-primary {
+    margin-block-start: 12.9375rem;
+    max-inline-size: 28.625rem;
+}
+
+.packages-primary h3 {
+    font: var(--headline2);
+    color: var(--white);
+}
+
+.packages-primary p {
+    font: var(--body1-regular);
+    color: var(--white);
+}
+
+.line {
+    block-size: 2.5rem;
+    background: var(--white);
+    inline-size: 100%;
+    margin-block-start: 3.75rem;
+    margin-block-end: 15.4375rem;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.second-line {
+    inline-size: 33.75rem;
+    block-size: 2.5rem;
+    background: var(--green);
+    border-radius: 100px;
 }

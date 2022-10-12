@@ -1,0 +1,26 @@
+.less-logging {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+    background: var(--white);
+}
+
+.less-logging-content {
+    grid-area: content;
+    max-inline-size: 27.875rem;
+    margin-block: 12.5rem;
+    padding-inline-start: 1.875rem;
+}
+
+.less-logging-content div img {
+    border-radius: 50%;
+}
+
+.less-logging-content h3 {
+    font: var(--headline2);
+}
+
+.less-logging-content p {
+    font: var(--body1-regular);
+    color: var(--grey);
+}

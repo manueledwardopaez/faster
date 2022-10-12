@@ -2,9 +2,29 @@
     display: grid;
     grid-template-columns: var(--gridTemplateColumns);
     grid-template-areas: ". . content .";
-    background: green;
+/*     background: url('../images/image 7.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: #E8E8E6; */
+    background: url('../images/image 7.png') bottom right no-repeat #E8E8E6; 
 }
 
 .purchases-content {
     grid-area: content;
+    padding-inline-start: 1.875rem;
+}
+
+.purchases div {
+    margin-block-start: 12.9375rem;
+    margin-block-end: 12.9375rem;
+    max-inline-size: 446px;
+}
+
+.purchases div h3 {
+    font: var(--headline2);
+}
+
+.purchases div p {
+    font: var(--body1-regular);
+    color: var(--grey);
 }

@@ -6,11 +6,13 @@
 @import './packages.css';
 @import './sticky.css';
 @import './button.css';
+@import './less-logging.css';
 
 :root {
   --white: #ffffff; 
   --grey: #808080; 
   --black: #000000; 
+  --green: #2FB464;
   --headline3: 800 2.875rem/3.5rem Inter; 
   --headline2: 700 3rem/3.625rem Inter; 
   --headline4: 700 1.75rem/normal Inter; 
@@ -30,9 +32,9 @@ body {
   margin: 0;
 }
 
-section {
+/* section {
   block-size: 500px;
-}
+} */
 
 .grid {
   display: grid;
