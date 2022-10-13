@@ -7,6 +7,9 @@
 @import './sticky.css';
 @import './button.css';
 @import './less-logging.css';
+@import './testimonials.css';
+@import './signUp.css';
+@import './footer.css';
 
 :root {
   --white: #ffffff; 
@@ -45,4 +48,11 @@ body {
 
 .grid section {
   grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 1400px){
+  :root {
+    --gridTemplateColumns: auto var(--iphoneInlineSize) 1fr auto; 
+    --iphoneInlineSize: 300px;
+  }
 }

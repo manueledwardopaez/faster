@@ -1,0 +1,38 @@
+.signUp {
+    --signUpBlockSize: -8rem;
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    max-inline-size: 876px;
+    margin-inline: auto;
+    text-align: center;
+    background: var(--white);
+    border-radius: .5rem;
+    position: relative;
+    top: var(--signUpBlockSize);
+}
+
+.signUp h3 {
+    font: var(--headline2);
+    color: var(--black);
+
+    padding-block-end: .75rem;
+    margin: 0;
+}
+
+.signUp p {
+    margin: 0;
+    padding-block-end: 3.5rem;
+}
+
+.signUp p {
+    font: var(--body1-regular);
+    color: var(--grey);
+}
+
+.button-signUp {
+    background: var(--black);
+    color: var(--white);
+    padding-block: .75rem;
+    padding-inline: 5.9375rem;
+    border: none;
+}
