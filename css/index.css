@@ -1,38 +1,42 @@
-@import './header.css';
-@import './wrapper.css';
-@import './hero.css';
-@import './checkout.css';
-@import './purchases.css';
-@import './packages.css';
-@import './sticky.css';
-@import './button.css';
-@import './less-logging.css';
-@import './testimonials.css';
-@import './signUp.css';
-@import './footer.css';
+@import "./header.css";
+@import "./wrapper.css";
+@import "./hero.css";
+@import "./checkout.css";
+@import "./purchases.css";
+@import "./packages.css";
+@import "./sticky.css";
+@import "./button.css";
+@import "./less-logging.css";
+@import "./testimonials.css";
+@import "./signUp.css";
+@import "./footer.css";
 
 :root {
-  --white: #ffffff; 
-  --grey: #808080; 
-  --black: #000000; 
-  --green: #2FB464;
-  --headline3: 800 2.875rem/3.5rem Inter; 
-  --headline2: 700 3rem/3.625rem Inter; 
-  --headline4: 700 1.75rem/normal Inter; 
-  --headline5: 700 1.5625rem/normal Inter; 
-  --button: 700 1.125rem/1.75rem Inter; 
-  --caption: 400 0.75rem/1.375rem Inter; 
-  --body1-regular: 400 1.125rem/1.6875rem Inter; 
-  --body1-bold: 700 1.125rem/1.6875rem Inter; 
-  --body2-regular: 400 1rem/1.375rem Inter; 
-  --body2-bold: 700 1rem/1.1875rem Inter;  
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #000000;
+  --green: #2fb464;
+  --headline3: 800 2.875rem/3.5rem Inter;
+  --headline2: 700 3rem/3.625rem Inter;
+  --headline4: 700 1.75rem / normal Inter;
+  --headline5: 700 1.5625rem / normal Inter;
+  --button: 700 1.125rem/1.75rem Inter;
+  --caption: 400 0.75rem/1.375rem Inter;
+  --body1-regular: 400 1.125rem/1.6875rem Inter;
+  --body1-bold: 700 1.125rem/1.6875rem Inter;
+  --body2-regular: 400 1rem/1.375rem Inter;
+  --body2-bold: 700 1rem/1.1875rem Inter;
   --iphoneInlineSize: 400px;
-  --gridTemplateColumns: 1fr var(--iphoneInlineSize) 1000px 1fr; 
+  --gridTemplateColumns: 1fr var(--iphoneInlineSize) 1000px 1fr;
 }
 
 body {
   font: var(--body1-regular);
   margin: 0;
+}
+
+.phone {
+  display: none;
 }
 
 /* section {
@@ -42,17 +46,176 @@ body {
 .grid {
   display: grid;
   grid-template-columns: var(--gridTemplateColumns);
-  grid-template-areas: "header header header header" "wrapper-start phone content wrapper-end" ;
-
+  grid-template-areas: "header header header header" "wrapper-start phone content wrapper-end";
 }
 
 .grid section {
   grid-column: 1 / -1;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
   :root {
-    --gridTemplateColumns: auto var(--iphoneInlineSize) 1fr auto; 
+    --gridTemplateColumns: auto var(--iphoneInlineSize) 1fr auto;
     --iphoneInlineSize: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --gridTemplateColumns: auto auto 1fr auto;
+    --headline3: 700 1.75rem / normal Inter;
+    --body1-regular: 400 1rem/1.375rem Inter;
+    --headline2: 700 1.5625rem / normal Inter;
+  }
+
+  .header {
+    padding-block: 1.5rem;
+    padding-inline: 1.25rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .fastLogin {
+    display: none;
+  }
+
+  .hero {
+    block-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-block-size: 700px;
+  }
+
+  .hero-content {
+    padding-block-start: 2.1875rem;
+    padding-inline: 1rem;
+  }
+
+  .phone {
+    display: block;
+    z-index: 2;
+  }
+
+  .sticky {
+    display: none;
+  }
+
+  .checkout {
+    /*     display: flex;
+    flex-direction: column; */
+    background: #e8e8e6;
+  }
+
+  .checkout-primary {
+    flex-direction: column;
+    padding-block-start: 350px;
+    margin-block-end: 4rem;
+  }
+
+  .checkout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0;
+/*     padding-block-end: 4rem; */
+  }
+
+  .checkout-secondary p {
+    margin-block-end: 0;
+  }
+
+  .checkout-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-block-end: 4rem;
+  }
+
+  .checkoutImage img {
+    object-fit: cover;
+  }
+
+  .purchases-primary {
+    margin-block-start: 4rem;
+    margin-block-end: 2rem;
+  }
+
+  .purchases-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-inline: 1rem;
+    padding-block-end: 4rem;
+  }
+
+  .packages-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-end: 4rem;
+    padding-inline: 0;
+  }
+
+  .packages-primary {
+    margin-block-start: 4rem;
+    max-inline-size: 28.625rem;
+    padding-inline: 1rem;
+  }
+
+  .line {
+    inline-size: 100%;
+    margin-block-end: 4rem;
+  }
+
+  .second-line {
+    max-inline-size: 205px;
+  }
+
+  .less-logging {
+    display: inline-block;
+  }
+
+  .less-logging-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-block: 0;
+    padding-inline: 1rem;
+    padding-block: 4rem;
+    margin-inline: auto;
+  }
+
+  .testimonials {
+    padding-block-start: 0;
+  }
+
+  .testimonials-content h3 {
+    padding-block: 80px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .card {
+    block-size: 440px;
+  }
+
+  .signUp {
+    padding-inline: 1rem;
+    inline-size: 80%;
+  }
+
+  .footer-content {
+    padding-inline: 1rem;
+    flex-direction: column;
+    gap: 4rem;
   }
 }

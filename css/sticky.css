@@ -4,6 +4,7 @@
     grid-area: phone;
     padding-block-start: 6.75rem;
     cursor: pointer;
+    inline-size: var(--iphoneInlineSize);
 }
 
 .sticky:active {
@@ -11,5 +12,15 @@
 }
 
 .sticky img {
-    max-inline-size: 100%;
+    inline-size: 100%;
+}
+
+.phone {
+    align-self: center;
+    cursor: pointer;
+    inline-size: var(--iphoneInlineSize);
+}
+
+.phone img {
+    inline-size: 100%;
 }
