@@ -1,33 +1,48 @@
 .hero {
-    grid-area: content;
-    grid-column: 3 / 4;
-    display: grid;
-    grid-template-columns: var(--gridTemplateColumns);
-    grid-template-areas: ". . content .";
-    background: url('../images/bg.png');
-    block-size: 818px;
+  grid-area: content;
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: ". . content .";
+  background: url("../images/bg.png");
+  block-size: 818px;
 }
 
 .hero-content {
-    grid-area: content;
-    color: var(--white);
-    padding-block-start: 12.9375rem;
-    padding-inline-start: 1.875rem;
-    /* max-inline-size: 685px; */
+  grid-area: content;
+  color: var(--white);
+  padding-block-start: 12.9375rem;
+  padding-inline-start: 1.875rem;
+  /* max-inline-size: 685px; */
 }
 
 .slogan {
-    font: var(--headline3);
-    margin: 0;
+  font: var(--headline3);
+  margin: 0;
 }
 
 .hero-content p {
-    font: var(--body1-regular);
-    color: var(--grey);
-    margin-block-start: 1.5rem;
-    margin-block-end: 3rem;
+  font: var(--body1-regular);
+  color: var(--grey);
+  margin-block-start: 1.5rem;
+  margin-block-end: 3rem;
 }
 
 .business {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    block-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-block-size: 700px;
+  }
+
+  .hero-content {
+    padding-block-start: 2.1875rem;
+    padding-inline: 1rem;
+  }
 }

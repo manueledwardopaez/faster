@@ -1,30 +1,47 @@
 .purchases {
-    display: grid;
-    grid-template-columns: var(--gridTemplateColumns);
-    grid-template-areas: ". . content .";
-/*     background: url('../images/image 7.png');
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: ". . content .";
+  /*     background: url('../images/image 7.png');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-color: #E8E8E6; */
-    background: url('../images/image 7.png') bottom right no-repeat #E8E8E6; 
+  background: url("../images/image 7.png") bottom right no-repeat #e8e8e6;
 }
 
 .purchases-content {
-    grid-area: content;
-    padding-inline-start: 1.875rem;
+  grid-area: content;
+  padding-inline-start: 1.875rem;
 }
 
 .purchases-primary {
-    margin-block-start: 12.9375rem;
-    margin-block-end: 12.9375rem;
-    max-inline-size: 446px;
+  margin-block-start: 12.9375rem;
+  margin-block-end: 12.9375rem;
+  max-inline-size: 446px;
 }
 
 .purchases div h3 {
-    font: var(--headline2);
+  font: var(--headline2);
 }
 
 .purchases div p {
-    font: var(--body1-regular);
-    color: var(--grey);
+  font: var(--body1-regular);
+  color: var(--grey);
+}
+
+@media screen and (max-width: 1000px) {
+  .purchases-primary {
+    margin-block-start: 4rem;
+    margin-block-end: 2rem;
+  }
+
+  .purchases-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-inline: 1rem;
+    padding-block-end: 4rem;
+  }
+
 }

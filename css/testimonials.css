@@ -1,56 +1,75 @@
 .testimonials {
-    padding-block-start: 8rem;
-    padding-block-end: 200px;
-    background: #ECEEF1;
+  padding-block-start: 8rem;
+  padding-block-end: 200px;
+  background: #eceef1;
 }
 
 .testimonials-content {
-    padding-inline: 1.5rem;
+  padding-inline: 1.5rem;
 }
 
 .testimonials-content h3 {
-    font: var(--headline2);
-    padding-block-end: 8rem;
-    text-align: center;
-    margin: 0;
+  font: var(--headline2);
+  padding-block-end: 8rem;
+  text-align: center;
+  margin: 0;
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .card {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    max-inline-size: 426px;
-    background: var(--white);
-    border-radius: .5rem;
-    text-align: center;
-    padding-inline: 1.875rem;
-    padding-block-end: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 426px;
+  background: var(--white);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-inline: 1.875rem;
+  padding-block-end: 2rem;
 }
 
 .card p {
-    margin: 0;
+  margin: 0;
 }
 
 .card-img {
-    position: relative;
-    top: -15%;
-    
+  position: relative;
+  top: -15%;
 }
 
 .message-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  block-size: 100%;
 }
 
 .author {
-    font: var(--body1-bold);
+  font: var(--body1-bold);
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonials {
+    padding-block-start: 0;
+  }
+
+  .testimonials-content h3 {
+    padding-block: 80px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .card {
+    block-size: 440px;
+  }
 }

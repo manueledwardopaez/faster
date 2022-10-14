@@ -22,3 +22,16 @@
     border: 2px solid var(--white);
     color: var(--white);
 }
+
+.button-signUp {
+    padding-inline: 3.75rem;
+    padding-block: .75rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+ .button-signUp {
+    font-size: 1rem;
+ }  
+}

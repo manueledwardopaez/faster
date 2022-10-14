@@ -1,44 +1,82 @@
 .checkout {
-    display: grid;
-    grid-template-columns: var(--gridTemplateColumns);
-    grid-template-areas: ". . content .";
-    background: var(--white);
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: ". . content .";
+  background: var(--white);
 }
 
 .checkout-content {
-    grid-area: content ;
-    padding-inline-start: 1.875rem;
+  grid-area: content;
+  padding-inline-start: 1.875rem;
 }
 
 .checkout-primary {
-    display: flex;
-    align-items: center;
-    margin-block-end: 8rem;
-    gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-block-end: 8rem;
+  gap: 1.5rem;
 }
 
 .checkout-primary img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .checkoutImage {
-    inline-size: 100%;
+  inline-size: 100%;
 }
 
 .checkoutImage img {
-    inline-size: 100%;
+  inline-size: 100%;
 }
 
 .checkout-secondary h3 {
-    font: var(--headline2);
-    padding-block-start: 4rem;
-    padding-block-end: 1.5rem;
-    max-inline-size: 611px;
-    margin: 0;
+  font: var(--headline2);
+  padding-block-start: 4rem;
+  padding-block-end: 1.5rem;
+  max-inline-size: 611px;
+  margin: 0;
 }
 
 .checkout-secondary p {
-    max-inline-size: 611px;
-    margin: 0;
-    margin-block-end: 8rem;
+  max-inline-size: 611px;
+  margin: 0;
+  margin-block-end: 8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .checkout {
+    /*     display: flex;
+        flex-direction: column; */
+    background: #e8e8e6;
+  }
+
+  .checkout-primary {
+    flex-direction: column;
+    padding-block-start: 350px;
+    margin-block-end: 4rem;
+  }
+
+  .checkout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0;
+    /*     padding-block-end: 4rem; */
+  }
+
+  .checkout-secondary p {
+    margin-block-end: 0;
+  }
+
+  .checkout-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-block-end: 4rem;
+  }
+
+  .checkoutImage img {
+    object-fit: cover;
+  }
 }

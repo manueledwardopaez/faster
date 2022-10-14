@@ -1,26 +1,42 @@
 .less-logging {
-    display: grid;
-    grid-template-columns: var(--gridTemplateColumns);
-    grid-template-areas: ". . content .";
-    background: var(--white);
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: ". . content .";
+  background: var(--white);
 }
 
 .less-logging-content {
-    grid-area: content;
-    max-inline-size: 27.875rem;
-    margin-block: 12.5rem;
-    padding-inline-start: 1.875rem;
+  grid-area: content;
+  max-inline-size: 27.875rem;
+  margin-block: 12.5rem;
+  padding-inline-start: 1.875rem;
 }
 
 .less-logging-content div img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .less-logging-content h3 {
-    font: var(--headline2);
+  font: var(--headline2);
 }
 
 .less-logging-content p {
-    font: var(--body1-regular);
-    color: var(--grey);
+  font: var(--body1-regular);
+  color: var(--grey);
+}
+
+@media screen and (max-width: 1000px) {
+  .less-logging {
+    display: inline-block;
+  }
+
+  .less-logging-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-block: 0;
+    padding-inline: 1rem;
+    padding-block: 4rem;
+    margin-inline: auto;
+  }
 }

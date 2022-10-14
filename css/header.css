@@ -1,39 +1,53 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-area: header;
-    background: var(--black);
-   
-    padding-inline: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+  background: var(--black);
+
+  padding-inline: 1.25rem;
 }
 
 .nav {
-   /*  padding-block: 1.5rem; */
-    display: flex;
+  /*  padding-block: 1.5rem; */
+  display: flex;
 }
 
-
-.nav a{
-    font: var(--button);
-    color: var(--grey);
-    text-decoration: none;
-    padding-block: 1.5rem;
-    margin-inline-start: 2.5rem;
+.nav a {
+  font: var(--button);
+  color: var(--grey);
+  text-decoration: none;
+  padding-block: 1.5rem;
+  margin-inline-start: 2.5rem;
 }
 
-.nav a:hover{
-    opacity: .7;
+.nav a:hover {
+  opacity: 0.7;
 }
 
 .nav a.is-selected {
-    border-bottom: 4px solid white;
-    color: var(--white);
-    inline-size: 165px;
-    text-align: center;
-    margin-inline-start: 0;
+  border-bottom: 4px solid white;
+  color: var(--white);
+  inline-size: 165px;
+  text-align: center;
+  margin-inline-start: 0;
 }
 
 .nav a:nth-of-type(2) {
-    margin-inline-start: 0;
+  margin-inline-start: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-block: 1.5rem;
+    padding-inline: 1.25rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .fastLogin {
+    display: none;
+  }
 }
