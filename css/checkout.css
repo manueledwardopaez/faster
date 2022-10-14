@@ -17,6 +17,10 @@
     gap: 1.5rem;
 }
 
+.checkout-primary img {
+    vertical-align: middle;
+}
+
 .checkoutImage {
     inline-size: 100%;
 }
